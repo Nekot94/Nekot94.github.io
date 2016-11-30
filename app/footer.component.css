@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Cuprum', sans-serif;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #2e3f50;
+}
+
+footer div {
+    margin: 0 auto;
+    width: 800px;
+    height: 100%;
+    padding: 16px 0;
+    color: #f2f2f2;
+}

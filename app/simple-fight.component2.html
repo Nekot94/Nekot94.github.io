@@ -1,0 +1,44 @@
+<h2>Бой</h2>
+
+<div class="game" *ngIf="!lose && !win">
+    <div class="player">
+        <p>{{player.name}}</p>
+        <img src="{{playerPic}}" width='200' height='200'>
+        <p>Жизни: {{player.health}}</p>
+        <p>Сила: {{player.strength}}</p>
+        <p>Защита: {{player.armor}}</p>   
+    </div>
+    <div class="enemy">
+        <p>{{enemy.name}}</p>
+        <img src="{{enemyPic}}" width='200' height='200'>
+        <p>Жизни: {{enemy.health}}</p>
+        <p>Сила: {{enemy.strength}}</p>
+        <p>Защита: {{enemy.armor}}</p>   
+    </div>
+
+    <div class="quesstion">
+        {{outputString}}  
+    </div>
+    <div class="answer">
+        <input (keyup)="onKey($event)">
+      
+    </div>
+
+    <button *ngIf="!started" (click)="startFight()">Начать бой</button>
+    <button *ngIf="started" (click)="attack()">Атаковать</button> 
+</div>
+
+<div class="lose" *ngIf="lose" style='color:red'>
+    <p>Поражение</p>
+    <a href='/fight'>Заново</a>
+
+</div>
+<div class="win" *ngIf="win" style='color:green'>
+    <p>Победа</p>
+    <a href='/map' >Дальше</a>
+
+
+</div>
+
+
+

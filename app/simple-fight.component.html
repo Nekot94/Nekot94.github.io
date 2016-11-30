@@ -1,0 +1,63 @@
+
+      <div class="main_container">
+      <my-top-menu></my-top-menu>
+
+        
+        <main>
+            <h2>Бой</h2>
+            <div class="game" *ngIf="!lose && !win">
+                <div class="player">
+                    <div class = "pers_stats">
+                        <ul>
+                            <li>Жизни:<br>{{player.health}}</li>
+                            <li>Сила:<br>{{player.strength}}</li>
+                            <li>Защита:<br>{{player.armor}}</li> 
+                        </ul>
+                    </div>
+                    <div class = "person">
+                        <p>{{player.name}}</p>
+                        <img src="{{playerPic}}" [style.transform]="playerAnim">
+                    </div>
+                </div>
+
+                <div class="enemy">
+                    <div class = "person">
+                        <p>{{enemy.name}}</p>
+                        <img src="{{enemyPic}}" [style.transform]="enemyAnim">
+                    </div>
+                    <div class = "pers_stats">
+                        <ul>
+                            <li>Жизни:<br>{{enemy.health}}</li>
+                            <li>Сила:<br>{{enemy.strength}}</li>
+                            <li>Защита:<br>{{enemy.armor}}</li>  
+                        </ul> 
+                    </div>
+                </div>
+
+                <div class="quesstion">
+                    <div>{{outputString}}</div>
+                </div>
+
+                <div class="answer">
+                    <input (keyup)="onKey($event)"  value={{currentAnswer}}>
+                    <button class = "attack__btn"  *ngIf="!started" (click)="startFight()">Начать бой</button>
+                    <button class = "attack__btn"*ngIf="started" (click)="attack()">Атаковать</button> 
+                </div>
+                            
+            </div>
+
+
+            <!-- <p>{{currentAnswer}}</p> -->
+            <div class="lose" *ngIf="lose" style='color:red'>
+                <p>Поражение</p>
+                <a href='/fight'>Заново</a>
+            </div>
+
+
+            <div class="win" *ngIf="win" style='color:green'>
+                <p>Победа</p>
+                <a href='/map' >Дальше</a>
+            </div>
+        </main>      
+    <my-footer></my-footer>
+</div>

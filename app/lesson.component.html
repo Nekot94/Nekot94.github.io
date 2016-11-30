@@ -1,0 +1,25 @@
+<div class="main_container">
+  <my-top-menu></my-top-menu>
+  <main>
+    <div class="education_text">
+      <p>{{outputText[0]}}</p>
+      <p>{{outputText[1]}}</p>
+      <p>{{outputText[2]}}</p>
+      <p>{{outputText[3]}}</p>
+      <p>{{outputText[4]}}</p>
+    </div>
+
+   <div class="dialog" >
+    <div>
+    <a title="Далее" (click)="goForward()" [style.visibility]='isVisible' >Далее..</a>
+    <a title="Повторить с начала" (click)="repeat()">Пожалуйста, повторите</a>
+    <a href="\fight" title="LET'S THE BATTLE BEGIN!" class="btn__begin_battle">В бой!</a>
+    </div><img src="../images/python1--opt.png" alt="Советник" class="adviser">
+  </div>
+
+  </main>
+  <my-footer></my-footer>
+</div>
+
+
+ 

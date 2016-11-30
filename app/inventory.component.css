@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Cuprum', sans-serif;
+}
+.main_container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 50px;
+  font-family: 'Cuprum', sans-serif;
+  background-color: #2ecc71;
+}
+nav {
+  height: 100%;
+  font-size: 0;
+  line-height: 0;
+}
+nav > div {
+  display: inline-block;
+  vertical-align: top;
+}
+.main_nav {
+  width: calc(100% - 200px);
+}
+.main_nav li {
+  position: relative;
+  display: inline-block;
+  padding: 5px 20px;
+  line-height: 1;
+  font-size: 12px;
+}
+.main_nav li:first-child {
+  margin-left: 25px;
+}
+.main_nav li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.main_nav li .nav__personaj {
+  background: url("../images/nav_icon--1-opt.png") no-repeat center;
+  background-size: contain;
+}
+.main_nav li .nav__global-map {
+  background: url("../images/nav_icon--2-opt.png") no-repeat center;
+  background-size: contain;
+}
+.main_nav li .nav__shop {
+  background: url("../images/nav_icon--4-opt.png") no-repeat center;
+  background-size: contain;
+}
+.main_nav li .nav__achievments {
+  background: url("../images/nav_icon--3-opt.png") no-repeat center;
+  background-size: contain;
+}
+.right_nav {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1;
+}
+.right_nav ul {
+  position: relative;
+  z-index: 1;
+  height: 50px;
+  padding-top: 19px;
+  color: #1f1f1f;
+  text-align: center;
+  background-color: #95a5a6;
+  font-size: 16px;
+  font-family: Cuprum, sans-serif;
+}
+.right_nav ul li {
+  display: none;
+}
+.right_nav ul:hover {
+  height: auto;
+}
+.right_nav ul:hover li {
+  display: block;
+  position: relative;
+  background-color: #95a5a6;
+}
+.right_nav ul:hover li a {
+  display: block;
+  padding: 20px 0;
+}
+.right_nav ul:hover li:first-child {
+  margin-top: 15px;
+}
+main {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #f00;
+  font-size: 0;
+  line-height: 0;
+}
+.character,
+.doll,
+.inventory {
+  display: inline-block;
+  height: 100%;
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: top;
+}
+.character {
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: #f0f0f0;
+  background-color: #34495e;
+}
+.character li {
+  position: relative;
+  width: 100%;
+  padding: 5px 0;
+  margin: 20px 0;
+  border-bottom: 1px solid #505f6f;
+  font-size: 20px;
+  text-align: left;
+}
+.character li > span {
+  display: inline-block;
+}
+.character li .char_stat--name {
+  width: 75%;
+}
+.character li .char_stat--number {
+  width: 25%;
+  font-weight: 800;
+}
+.character li:first-child {
+  margin-top: 30px;
+}
+.doll {
+  position: relative;
+  width: calc(100% - 700px);
+  background: url("../images/chuvachok.png") no-repeat center #fefefe;
+  background-size: auto 100%;
+}
+.doll div[class^="items"] {
+  display: block;
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  border: 1px solid #000;
+}
+.doll .items__head {
+  top: 60px;
+  left: 190px;
+}
+.doll .items__left-hand {
+  top: 280px;
+  left: 310px;
+  background-size: contain !important;
+}
+.doll .items__right-hand {
+  top: 335px;
+  left: 170px;
+}
+.doll .items__body {
+  top: 200px;
+  left: 210px;
+}
+.doll .items__foot {
+  top: 510px;
+  left: 230px;
+}
+.doll .items__booster-1 {
+  top: 50px;
+  left: 30px;
+}
+.doll .items__booster-2 {
+  top: 200px;
+  left: 30px;
+}
+.doll .items__booster-3 {
+  top: 350px;
+  left: 30px;
+}
+.inventory {
+  position: relative;
+  width: 400px;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+.inventory h3 {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px 0;
+  font-size: 20px;
+  text-align: center;
+}
+.inventory .inventory_items {
+  position: relative;
+  overflow: overlay;
+  width: 100%;
+  height: 460px;
+  padding-left: 15px;
+  font-size: 0;
+  line-height: 0;
+}
+.inventory .inventory_items .item__object {
+  display: inline-block;
+  box-sizing: content-box;
+  width: 30%;
+  height: 145px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #fefefe;
+}
+.inventory .inventory_items .item__object:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  box-shadow: 2px 2px 12px -6px rgba(32,32,32,0.5);
+}
+.inventory .inventory_items .item__object img {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+.inventory .inventory_items .item__object .weapon_stat {
+  height: 20px;
+}
+.inventory .inventory_items .item__object .weapon_stat .weapon_stat--name,
+.inventory .inventory_items .item__object .weapon_stat .weapon_stat--number {
+  display: inline-block;
+  padding-top: 5px;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 1;
+}
+.inventory .inventory_items .item__object .weapon_stat .weapon_stat--name {
+  width: 70%;
+  padding-left: 15px;
+  color: #f00;
+  text-align: left;
+}
+.inventory .inventory_items .item__object .weapon_stat .weapon_stat--number {
+  width: 30%;
+  color: #202020;
+  text-align: center;
+}
+.inventory .inventory_items__deact {
+  display: none;
+}
+.inventory .inventory_shop {
+  position: absolute;
+  display: block;
+  bottom: 22px;
+  right: 16px;
+  width: 91%;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 30px;
+  font-family: 'Cuprum', sans-serif;
+  background-color: #1abc9c;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.inventory .inventory_shop:hover {
+  background-color: #2e7769;
+  color: #fff;
+  overflow: hidden;
+}
+.inventory .inventory_shop h3 {
+  width: 100%;
+  height: 60px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 30px;
+  font-family: 'Cuprum', sans-serif;
+  background-color: #1abc9c;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.inventory .inventory_shop h3:hover {
+  background-color: #2e7769;
+  color: #fff;
+}
+.inventory .inventory_shop__active {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  bottom: 22px;
+  right: 16px;
+  width: 91%;
+  height: 566px;
+  transition: height 0.3s ease;
+  background-color: #1abc9c;
+  border-radius: 5px;
+}
+.inventory .inventory_shop__active h3 {
+  width: 100%;
+  height: 60px;
+  padding: 15px;
+  font-size: 30px;
+  font-family: 'Cuprum', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.inventory .inventory_shop__active h3:hover {
+    background-color: #2e7769;
+    color: #fff;
+}
+
+.inventory .inventory_shop__active .inventory_shop__items {
+  width: calc(100% - 10px);
+  height: 500px;
+  overflow-y: overlay;
+  margin: 0 5px;
+  background: #f9f9f9;
+}
+.inventory .inventory_shop__active .inventory_shop__items .shop__item {
+  display: inline-block;
+  box-sizing: content-box;
+  width: 42%;
+  height: 200px;
+  margin: 10px 0px 6px 14px;
+  cursor: pointer;
+  background-color: #fefefe;
+}
+.inventory .inventory_shop__active .inventory_shop__items .shop__item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  box-shadow: 2px 2px 12px -6px rgba(32,32,32,0.5);
+}
+.inventory .inventory_shop__active .inventory_shop__items .shop__item img {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+.inventory .inventory_shop__active .inventory_shop__items .shop__item .shop__weapon_stat {
+  height: 20px;
+  font-size: 0;
+  line-height: 0;
+}
+.inventory .inventory_shop__active .inventory_shop__items .shop__item .shop__weapon_stat .shop__weapon_stat--name,
+.inventory .inventory_shop__active .inventory_shop__items .shop__item .shop__weapon_stat .shop__weapon_stat--number {
+  display: inline-block;
+  padding-top: 5px;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 1;
+}
+.inventory .inventory_shop__active .inventory_shop__items .shop__item .shop__weapon_stat .shop__weapon_stat--name {
+  width: 70%;
+  padding-left: 15px;
+  color: #f00;
+  text-align: left;
+}
+.inventory .inventory_shop__active .inventory_shop__items .shop__item .shop__weapon_stat .shop__weapon_stat--number {
+  width: 30%;
+  color: #202020;
+  text-align: left;
+}
+.inventory .inventory_shop__active .inventory_shop__items .shop__item .shop__weapon_stat .weapon_stat--price {
+  width: 100%;
+  height: 30px;
+  padding-left: 15px;
+  padding-top: 10px;
+  font-size: 0;
+  line-height: 0;
+  color: #202020;
+}
+.inventory .inventory_shop__active .inventory_shop__items .shop__item .shop__weapon_stat .weapon_stat--price span {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1;
+}
+/*footer {
+  width: 100%;
+  height: 50px;
+  background-color: #2e3f50;
+}
+footer div {
+  margin: 0 auto;
+  width: 800px;
+  height: 100%;
+  padding: 16px 0;
+  color: #f2f2f2;
+}*/

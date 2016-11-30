@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Cuprum', sans-serif;
+}
+.main_container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  background-color: #f9f9f9;
+  font-size: 0;
+  line-height: 0;
+}
+.education_text {
+  display: inline-block;
+  width: calc(100% - 300px);
+  height: 500px;
+  padding: 40px 50px;
+  font-size: 22px;
+  line-height: 1.5;
+  font-family: 'Cuprum', sans-serif;
+  text-align: justify;
+  vertical-align: top;
+}
+.education_text p {
+  padding: 5px 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.dialog {
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+  background-color: #1abc9c;
+  vertical-align: top;
+}
+.dialog div {
+  display: block;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  padding-top: 30px;
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: top;
+}
+.dialog div a {
+  display: block;
+  margin: 25px;
+  margin-top: 40px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  font-family: 'Cuprum', sans-serif;
+  cursor: pointer;
+}
+.dialog div a:hover {
+  color: #34495e;
+}
+.dialog div .btn__begin_battle {
+  width: 200px;
+  padding: 13px 70px;
+  border-radius: 6px;
+  background-color: #34495e;
+  color: #fff;
+}
+.dialog div .btn__begin_battle:hover {
+  background-color: #fff;
+  color: #000;
+}
+.dialog .adviser {
+  display: block;
+  width: 300px;
+  height: 300px;
+  padding-left: 20px;
+  vertical-align: top;
+}
+

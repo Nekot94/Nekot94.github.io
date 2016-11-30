@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Cuprum', sans-serif;
+}
+.main_container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+main {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: url('../images/map1.jpg') no-repeat center;
+  background-size: 100% 100%; 
+}
+.location {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.location--1 {
+  top: 85px;
+  left: 160px;
+  background: url("../images/location-1--opt.png") no-repeat center;
+  background-size: contain;
+} 
+.location--1:hover {
+  background: url("../images/location-1--active--opt.png") no-repeat center;
+  background-size: contain;
+}
+.location--2 {
+  top: 75px;
+  left: 630px;
+  background: url("../images/location-5--opt.png") no-repeat center;
+  background-size: contain;
+}
+.location--2:hover {
+  background: url("../images/location-5--active--opt.png") no-repeat center;
+  background-size: contain;
+}
+.location--3 {
+  top: 350px;
+  left: 760px;
+  background: url("../images/location-3.png") no-repeat center;
+  background-size: contain;
+}
+.location--3:hover {
+  background: url("../images/location-3--active--opt.png") no-repeat center;
+  background-size: contain;
+}
+.location--4 {
+  top: 215px;
+  left: 430px;
+  background: url("../images/location-4--opt.png") no-repeat center;
+  background-size: contain;
+}
+.location--4:hover {
+  background: url("../images/location-4--active--opt.png") no-repeat center;
+  background-size: contain;
+}
+.location--5 {
+  top: 380px;
+  left: 90px;
+  background: url("../images/location-2--opt.png") no-repeat center;
+  background-size: contain;
+}
+.location--5:hover {
+  background: url("../images/location-2--active--opt.png") no-repeat center;
+  background-size: contain;
+}
+.location--6 {
+  top: 155px;
+  left: 955px;
+  background: url("../images/location-6--opt.png") no-repeat center;
+  background-size: contain;
+}
+.location--6:hover {
+  background: url("../images/location-6--active--opt.png") no-repeat center;
+  background-size: contain;
+}
+

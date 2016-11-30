@@ -1,0 +1,122 @@
+<div class="main_container">
+  <my-top-menu></my-top-menu>
+  <main>
+    <div class="character">
+      <ul>{{player.name}}
+        <li><span class="char_stat--name">Здоровье</span><span class="char_stat--number">{{player.health}}</span></li>
+        <li><span class="char_stat--name">Сила</span><span class="char_stat--number">{{player.strength}}</span></li>
+        <li><span class="char_stat--name">Броня</span><span class="char_stat--number">{{player.armor}}</span></li>
+        <li><span class="char_stat--name">Опыт</span><span class="char_stat--number">{{player.expirence}}</span></li>
+        <li><span class="char_stat--name">Уровень</span><span class="char_stat--number">{{player.level}}</span></li>
+      </ul>
+    </div>
+    <div class="doll">
+      <div class="doll_items">
+        <div class="items__head"></div>
+      <div class="items__left-hand" [style.background]="choisedItem"></div>
+<!-- <div class="items__left-hand" style = 'background: url("images/weapon-1.png") no-repeat rgba(0,0,0,0.2)'></div> -->
+
+        <div class="items__right-hand"></div>
+        <div class="items__body"></div>
+        <div class="items__foot"></div>
+        <div class="items__booster-1"></div>
+        <div class="items__booster-2"></div>
+        <div class="items__booster-3"></div>
+      </div>
+    </div>
+    <div class="inventory">
+      <h3>Инвентарь</h3>
+      <!-- <div class="inventory_items"> -->
+      <div [ngClass]="{inventory_items: isActive, inventory_items__deact: !isActive}">
+       <div 
+        *ngFor="let item of player.items" class="item__object"
+        (click)="takeItem(item)"
+        ><img src="../images/{{item.image}}.png" alt="Оружие">
+          <div class="weapon_stat">
+            <div class="weapon_stat--name">{{item.parameter}}</div>
+            <div class="weapon_stat--number">{{item.power}}</div>
+          </div>
+        </div>
+
+      
+      </div>
+      <div [ngClass]="{inventory_shop__active: !isActive, inventory_shop: isActive}"> 
+      <!-- div class = "inventory_shop"> -->
+        <h3 (click)="toShop()">Магазин</h3>
+        <div class="inventory_shop__items">
+          <div class="shop__item"><img src="../images/weapon-1.png" alt="Оружие">
+            <div class="shop__weapon_stat">
+              <div class="shop__weapon_stat--name">Сила</div>
+              <div class="shop__weapon_stat--number">15</div>
+              <div class="weapon_stat--price"><span>Цена</span><span>2000</span></div>
+            </div>
+          </div>
+          <div class="shop__item"><img src="../images/weapon-2.png" alt="Оружие">
+            <div class="shop__weapon_stat">
+              <div class="shop__weapon_stat--name">Сила</div>
+              <div class="shop__weapon_stat--number">25</div>
+              <div class="weapon_stat--price"><span>Цена</span><span>5000</span></div>
+            </div>
+          </div>
+          <div class="shop__item"><img src="../images/weapon-1.png" alt="Оружие">
+            <div class="shop__weapon_stat">
+              <div class="shop__weapon_stat--name">Сила</div>
+              <div class="shop__weapon_stat--number">15</div>
+              <div class="weapon_stat--price"><span>Цена</span><span>2000</span></div>
+            </div>
+          </div>
+          <div class="shop__item"><img src="../images/weapon-2.png" alt="Оружие">
+            <div class="shop__weapon_stat">
+              <div class="shop__weapon_stat--name">Сила</div>
+              <div class="shop__weapon_stat--number">25</div>
+              <div class="weapon_stat--price"><span>Цена</span><span>5000</span></div>
+            </div>
+          </div>
+          <div class="shop__item"><img src="../images/weapon-1.png" alt="Оружие">
+            <div class="shop__weapon_stat">
+              <div class="shop__weapon_stat--name">Сила</div>
+              <div class="shop__weapon_stat--number">15</div>
+              <div class="weapon_stat--price"><span>Цена</span><span>2000</span></div>
+            </div>
+          </div>
+          <div class="shop__item"><img src="../images/weapon-2.png" alt="Оружие">
+            <div class="shop__weapon_stat">
+              <div class="shop__weapon_stat--name">Сила</div>
+              <div class="shop__weapon_stat--number">25</div>
+              <div class="weapon_stat--price"><span>Цена</span><span>5000</span></div>
+            </div>
+          </div>
+          <div class="shop__item"><img src="../images/weapon-1.png" alt="Оружие">
+            <div class="shop__weapon_stat">
+              <div class="shop__weapon_stat--name">Сила</div>
+              <div class="shop__weapon_stat--number">15</div>
+              <div class="weapon_stat--price"><span>Цена</span><span>2000</span></div>
+            </div>
+          </div>
+          <div class="shop__item"><img src="../images/weapon-2.png" alt="Оружие">
+            <div class="shop__weapon_stat">
+              <div class="shop__weapon_stat--name">Сила</div>
+              <div class="shop__weapon_stat--number">25</div>
+              <div class="weapon_stat--price"><span>Цена</span><span>5000</span></div>
+            </div>
+          </div>
+          <div class="shop__item"><img src="../images/weapon-1.png" alt="Оружие">
+            <div class="shop__weapon_stat">
+              <div class="shop__weapon_stat--name">Сила</div>
+              <div class="shop__weapon_stat--number">15</div>
+              <div class="weapon_stat--price"><span>Цена</span><span>2000</span></div>
+            </div>
+          </div>
+          <div class="shop__item"><img src="../images/weapon-2.png" alt="Оружие">
+            <div class="shop__weapon_stat">
+              <div class="shop__weapon_stat--name">Сила</div>
+              <div class="shop__weapon_stat--number">25</div>
+              <div class="weapon_stat--price"><span>Цена</span><span>5000</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <my-footer></my-footer>
+</div>

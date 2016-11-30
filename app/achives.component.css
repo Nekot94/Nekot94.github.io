@@ -1,0 +1,38 @@
+.main_container {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: overlay;
+    font-size: 0;
+    line-height: 0;
+}
+.achiev__plate {
+    position: relative;
+    display: inline-block;
+    width: 28%;
+    margin: 30px;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 1;
+    filter: grayscale(100%);
+}
+.achiev__plate:hover {    
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.achiev__plate--got {
+    filter: grayscale(0);
+}
+.achiev__plate img {
+    display: block;
+    box-sizing: content-box;
+    width: 100%;
+}
+.achiev__name {
+    width: 100%;
+    height: 30px;
+    font-size: 28px;
+    color: #2e3f50;
+    text-align: center;
+}

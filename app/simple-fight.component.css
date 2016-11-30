@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Cuprum', sans-serif;
+}
+.main_container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 50px;
+  font-family: 'Cuprum', sans-serif;
+  background-color: #2ecc71;
+}
+nav {
+  height: 100%;
+  font-size: 0;
+  line-height: 0;
+}
+nav > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+
+
+
+main h2 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Cuprum', sans-serif;
+    color: #34495e;
+    padding: 10px;
+}
+.game {
+  font-size: 0;
+  line-height: 0;
+}
+.game > div {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+.player, .enemy{
+  height: 400px;
+  position: relative;
+}
+.pers_stats {
+  width: 40%;
+  color: #fff;
+  background-color: #34495e;
+  height: 100%;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: top;
+  text-align: center;
+}
+.person {
+  width: 60%;
+  background: #2e7769;
+  height: 100%;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: top;
+}
+.player .person {
+  text-align: right;
+}
+.enemy .person {
+  text-align: left;
+}
+
+.person p {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 800;
+  color: #1b252f;
+  padding: 10px 0;
+}
+.person img {
+  width: 360px;
+  height: auto;
+}
+.pers_stats ul {
+  margin-top: 30px;
+}
+.pers_stats li {
+  font-size: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #172e45;
+}
+
+
+.quesstion, .answer {
+  font-size: 16px;
+  line-height: 1;
+  background: #2ecc71;
+  height: 150px;
+}
+.quesstion {
+  padding: 20px 25px;
+  border-right: 1px solid #02b34d;
+  color: #0c1d2e;
+  font-size: 30px;
+  line-height: 1.5;
+}
+.answer {
+    background: #2ecc71;
+    position: relative;
+}
+.answer input {
+  font-size: 25px;
+  width: 93%;
+  height: 80px;
+  margin: 10px 22px;
+  padding-left: 12px;
+}
+.attack__btn {
+  position: absolute;
+  text-align: right;
+  background: #2e7769;
+  color: #fff;
+  right: 20px;
+  bottom: 11px;
+  border: none;
+  padding: 10px 56px;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Cuprum', sans-serif;
+}
+.attack__btn:hover {
+  background: #1b252f;
+  color: #fff;
+}
+
+.lose, .win {
+  text-align: center;
+  font-size: 44px;
+  margin: 235px 0;
+}
+.lose a, .win a {
+  font-size: 28px;
+}
+
+
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #2e3f50;
+}
+footer div {
+  margin: 0 auto;
+  width: 800px;
+  height: 100%;
+  padding: 16px 0;
+  color: #f2f2f2;
+}
