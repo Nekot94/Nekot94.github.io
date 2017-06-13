@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "whichhats.data.unityweb",
+"asmCodeUrl": "whichhats.asm.code.unityweb",
+"asmMemoryUrl": "whichhats.asm.memory.unityweb",
+"asmFrameworkUrl": "whichhats.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
