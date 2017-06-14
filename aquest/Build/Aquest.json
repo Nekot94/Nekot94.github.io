@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "Aquest.data.unityweb",
+"asmCodeUrl": "Aquest.asm.code.unityweb",
+"asmMemoryUrl": "Aquest.asm.memory.unityweb",
+"asmFrameworkUrl": "Aquest.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
