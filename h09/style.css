@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo_n_title a {
+    display: inline-block;
+}
+
+.logo_n_title img {
+   width: 60px;
+   height: 60px;
+}
+
+.logo_n_title h1 {
+    font-size: 1.5em;
+    color: #444;
+}
+
+.title {
+    padding-left: 10px;
+    vertical-align: top;
+}
+
+header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid aquamarine;
+}
+
+nav, .slider {
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav {
+    width: 25%;
+}
+
+.slider {
+    width: 74%;
+}
+
+.menu_n_slider {
+    margin-top: 20px;
+}
+
+nav ul {
+    margin: 0;
+    box-shadow: 3px 3px 8px -1px #999;
+}
+nav li {
+    padding: 8px 5px;
+}
+nav li a:hover {
+    color: #6ef;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #444;
+}
+
+section {
+    display: inline-block;
+    position: relative;
+    width:30%;
+    margin: 1%;
+    padding: 5px;
+    box-shadow: 3px 3px 8px -1px #999;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+section img {
+    display: block;
+    width: 100%;
+}
+
+section h3 {
+    font-size: 1.1em;
+    color: #000;
+}
+
+footer {
+    padding: 20px;
+    color: #777;
+}
